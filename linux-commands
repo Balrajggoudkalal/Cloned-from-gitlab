@@ -1,0 +1,298 @@
+Linux Prompts:
+    $ -> Normal User
+    # -> Root User (Administrator)
+
+Linux Command Standard Syntax:
+Command-name {options} {inputs} 
+
+Dot (.) denotes present working directory 
+DotDot(..) denotes parent directory 
+
+Options:
+    - <Single-Character>
+    -- <Single-Word>
+
+    Ex: uname --help 
+
+Files/Directories stating with dot(.) are hidden files and directories in Linux
+
+List out existing files and directories:
+$ ls 
+$ ls -a 
+$ ls -l 
+$ ls -lt 
+$ ls -ltr
+
+
+Files:
+ -> Create Files 
+    $ touch file-name
+ -> Remove Files 
+    $ rm file-name 
+ -> Rename a file 
+    $ mv source destination 
+
+    Case 1: If destination doesn't exist it will re-name the file. 
+
+    Case 2: If destination exists it will overwrite the file
+
+ -> Copy a file 
+    $ cp source  destination 
+
+Directories:
+
+/ -> Root Directory
+
+Types of files:
+    d - Directory   
+    - - Regular file 
+    l - Link
+    b - block devices
+    c - character files 
+    S - socket files 
+    p - Named pipe file 
+
+To check in which directory you are in 
+    $ pwd
+
+Change from one directory to another
+    $ cd <directory>
+
+    $ cd -> This will take you to home directory 
+    $ cd - -> This will take you to previous dir 
+    $ cd .. -> Takes you to parent directory 
+
+ -> Create Directory 
+    $ mkdir demo 
+
+ -> Remove a directory 
+    rm / rmdir (Empty Dir)
+    $ rm -r dirname
+
+ -> Copy a directory 
+    $ cp -r dir1 dir2
+
+ -> Renaming / Moving a directory
+    $ mv source destination
+
+    ** If destination does not exists: Rename the directory
+    ** If destination exists:
+         -> Destination is a file:
+                Invalid operation
+         -> Destination is a Directory:
+                File/Directory will move inside that directory
+
+Filters:
+    -> See the complete content inside a file..
+       $ cat passwd
+       $ cat -n passwd 
+       $ tac passwd 
+
+    -> By line numbers.
+        --> Print from starting of the file 
+            $ head passwd 
+                It print top 10 lines 
+            $ head -5 passwd 
+                It print top 5 lines 
+
+        --> Print from ending of the file 
+            $ tail passwd 
+                It prints last 10 lines
+
+            $ tail -3 passwd 
+                It prints last 3 lines 
+
+    -> Search a word and print those lines 
+        Syntax: grep word file 
+        $ grep ec2-user passwd 
+
+    -> Column based filter 
+        Syntax: cut -d delimeter -f number file 
+        $ cut -d : -f 1 passwd 
+        $ cut -d : -f 1,5 passwd
+        $ cut -d : -f 1-5 passwd
+
+EDITORS:
+    ** vi / vim (so widely used)
+    ** gedit
+    ** nano  
+    
+
+Finding Files:
+    -> Finding the files can be done with "find" command.
+        Syntax: find <location> <criteria> 
+        Ex: find / -name sample.conf
+            find /boot -type d 
+            find / -name xyz -type d
+            find / -name xyz -type f
+            find / -name "*.conf"
+            
+    -> Finding the files can be done also with "locate" command (Only in Redhat family)
+       By default that package (software) is not available by default.
+       In order to install it just follow the following commands.
+        $ sudo yum install mlocate -y 
+        $ sudo updatedb 
+        
+       Now you can find the files using locate command.
+        $ locate "*.conf"
+        
+Utilties:
+       -> Downloading the files can be done with "wget" command.
+          By default wget command is not installed in your system.
+          
+          $ sudo yum install wget -y 
+          
+          Now you can download the file using wget.
+          Syntax: wget <URL>
+          
+          
+       -> Browsing over command line
+          $ curl <URL>
+          
+          Also, You can download the files with curl command.
+          $ curl URL -o filename
+          
+       -> Compression Utilities.
+           -> Extract a tar file.
+              $ tar -xf file.tar.gz / file.tar
+              
+            tar does not apply compression it is only a packing tool to create a file from multiple files and directories.
+            But the compression is applied with 
+                gunzip  -> .gz
+                bunzip2 -> .bz2
+           
+           -> TRY THIS AS TASK 
+              Create a tar file with .gz and .bz2 extension
+              By default bunzip2 is not installed 
+              $ sudo yum install bzip2 -y
+             
+Pipes: (|)
+    Pipes will convert STDOUT to STDIN
+
+Restart /Shutdown:
+  Restart:
+    $ sudo init 6
+    $ sudo reboot
+    $ sudo shutdown -r now
+    
+  Shutdown:
+    $ sudo init 0
+    $ sudo halt
+    $ sudo shutdown -h now
+    
+  -> To verify whether the system is rebooted or not. 
+    $ uptime
+    
+Process Management:
+   -> Every command you execute will create a PID (Process ID , which is unique)
+    To list out all the process we are going to use "ps" command.
+    Every process is going to have a parent process ID.
+    
+
+Admin topics:
+
+All admins activities cannot be performed by a normal users. You need to be a root user to perform the tasks.
+Root logins are not allowed in companies and we alternatively use sudo to gain access and perform activities.
+
+All the commands we are going to perform we will add sudo to starting of the command.
+
+$ sudo <command>
+  The above command will be executed as a root user and also it will be logged in the system.
+  
+1. User management
+   In RedHat Linux, to add a user it is mandatory to have a group.
+   
+   Groups:
+     -> To add a group , Use the following
+        $ sudo groupadd demo
+        
+     -> To check whether the group is added or not , we can use the following command.
+        $ cat /etc/group | grep demo
+        
+        Del Group: groupdel
+        Modify Group: groupmod
+       
+   Users:
+     -> TO create a user, use the following.
+        $ sudo useradd -g demo raju
+        
+     -> To check whether the user is added or not 
+        $ id raju
+        $ cat /etc/passwd | grep raju
+        
+     -> Add user to other groups. 
+        $ sudo usermod -a -G adm raju
+        
+     -> To set a password to raju user
+        $ sudo passwd raju
+        
+     -> To swtich from one user to another user then use "su"
+        $ su -  raju
+
+  Sudoers:
+     -> To add raju user to execute commands as root user 
+        $ sudo visudo
+        
+2. Package management
+     -> Redhat used RPM (RPM Package manager formerly called as Redhat Package Manager), it is like .exe 
+        $ sudo yum list installed
+        $ sudo yum list available
+        $ sudo yum list (or) $ sudo yum list all
+        $ sudo yum install zip -y
+        $ sudo yum remove zip -y
+        $ sudo yum update zip -y
+        
+3. Service management.
+     -> To manage the services we have "systemctl" in centos7 OS, where as we use to have "service" command earlier on centos 6.
+     -> To list all services which are active.
+        $ sudo systemctl list-units -t service 
+     -> To list all services which includes inactive.
+        $ sudo systemctl list-units -t service --all
+        
+     -> TO start/stop/restart a service.
+        $ sudo systemctl start httpd
+        $ sudo systemctl stop httpd
+        $ sudo systemctl restart httpd
+        
+     -> To check the status of httpd.
+        $ sudo systemctl status httpd
+        
+     -> To start the service at the time of reboot automatically then 
+        $ sudo systemctl enable httpd
+        $ sudo systemctl disable httpd
+
+        
+4. Network management
+    -> Info about IP address.
+      $ ip a
+      
+    -> Server name information.
+      $ hostname
+      $ hostname -f 
+      
+    -> Port Info
+      Every IP is going to have ports from 0-65535 
+      $ sudo netstat -lntp 
+      
+5. Disk management (Just intro)
+    -> To check the disks on the server
+      $ sudo fdisk -l
+      
+    -> To check the mounted file systems
+      $ mount
+      $ df -h
+     In order to access the disk we need to mount it.
+     
+6. File permissions
+  -> Ownerships
+    Owner:
+       $ sudo chown username filename
+    Group Owner:
+       $ sudo chgrp username filename
+       
+       $ sudo chown username:groupname file
+       $ sudo chown username:groupname directory -R
+    
+  -> Permissions
+     $ chmod u+x file 
+     $ chmod o-r file 
