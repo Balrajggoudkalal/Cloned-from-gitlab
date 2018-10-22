@@ -114,9 +114,12 @@ Filters:
 
 EDITORS:
     ** vi / vim (so widely used)
+        vi editor is not available by default in centos 7 and we need to install it, To install vi editor type the following command.
+          sudo yum install vim -y
+          
     ** gedit
     ** nano  
-    
+          
 
 Finding Files:
     -> Finding the files can be done with "find" command.
