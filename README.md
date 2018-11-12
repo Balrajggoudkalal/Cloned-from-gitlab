@@ -94,7 +94,9 @@ https://code.visualstudio.com/
 
 ## c. Setup AWS Account to create create and access servers.
 
-Open AWS and import key.
+Open AWS and Choose Region and in future always stick with one region.
+
+Next you need to import key.
 
 ![image](/uploads/fac613a2fc6b37daac1ee33259a39b39/image.png)
 
