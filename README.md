@@ -40,11 +40,13 @@ You need to install couple of tools to install access servers from AWS account.
 
 ### 1. Install GitBash
 
+`MAC and Linux Users can ignore this installation`
+
 Download the GitBash from https://git-scm.com/downloads and install it with default options
 
 Then,
 
-Open the GitBash and run the following commands.
+Open the GitBash and run the following commands. But Mac and Linux Users can use `Terminal` to run these commands.
 
 `$ ssh-keygen -f devops `   <- You will be asked to enter Passphrase prompt , But just hit ENTER.
 
