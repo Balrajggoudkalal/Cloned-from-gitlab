@@ -126,7 +126,9 @@ Next you need to import key.
 
 
 
+### To access it with xshell , You can copy the Public IP and run the following command in Xshell.
 
+![image](/uploads/550e0bc2f38fd3e4f4e8b4c6e5a8da7e/image.png)
 
 
 
