@@ -1,24 +1,43 @@
-Linux Prompts:
-    $ -> Normal User
-    # -> Root User (Administrator)
-
 Linux Command Standard Syntax:
-Command-name {options} {inputs} 
+.....................................
 
-Dot (.) denotes present working directory 
-DotDot(..) denotes parent directory 
+Command-name {options} {inputs} 
 
 Options:
     - <Single-Character>
     -- <Single-Word>
 
+Standard Option to all the commands is --help
     Ex: uname --help 
+
+.....................................    
+
+Find the Vendor of the OS.
+
+$ cat /etc/*release
+
+Hardware Information about your machine in RedHat OS
+
+CPU 
+ $ cat /proc/cpuinfo
+MEM 
+ $ cat /proc/meminfo
+DISK
+ $ sudo fdisk -l
+
+.....................................
+
+
+Linux Prompts:
+    $ -> Normal User
+    # -> Root User (Administrator)
+...........................
 
 Files/Directories stating with dot(.) are hidden files and directories in Linux
 
 List out existing files and directories:
 $ ls 
-$ ls -a 
+$ ls -A  / ls -a
 $ ls -l 
 $ ls -lt 
 $ ls -ltr
@@ -27,8 +46,14 @@ $ ls -ltr
 Files:
  -> Create Files 
     $ touch file-name
+    
+    Ex: $ touch sample.txt 
+    
+    Note: Linux doesn't have file extensions, Extensions we keep in Linux is only for user understanding.
+    
  -> Remove Files 
     $ rm file-name 
+    
  -> Rename a file 
     $ mv source destination 
 
@@ -38,6 +63,13 @@ Files:
 
  -> Copy a file 
     $ cp source  destination 
+    
+    ...............................
+
+Dot (.) denotes present working directory 
+DotDot(..) denotes parent directory 
+
+
 
 Directories:
 
