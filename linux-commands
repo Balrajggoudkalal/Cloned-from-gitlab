@@ -76,6 +76,8 @@ Directories:
 
 / -> Root Directory
 
+Directory Structure Explained: https://www.thegeekstuff.com/2010/09/linux-file-system-structure
+
 Types of files:
     d - Directory   
     - - Regular file 
