@@ -10,6 +10,15 @@ Options:
 Standard Option to all the commands is --help
     Ex: uname --help 
 
+------------------------------------
+To find out whether the system is a 32 bit or 64 bit then you can refer uname command
+
+$ uname -i
+
+x86_64   -> 64 Bit OS
+i386/ i686/ i586  -> 32 Bit OS
+
+------------------------------------
 .....................................    
 
 Find the Vendor of the OS.
