@@ -349,7 +349,7 @@ $ sudo <command>
     Owner:
        $ sudo chown username filename
     Group Owner:
-       $ sudo chgrp username filename
+       $ sudo chgrp groupname filename
        
        $ sudo chown username:groupname file
        $ sudo chown username:groupname directory -R
@@ -357,3 +357,4 @@ $ sudo <command>
   -> Permissions
      $ chmod u+x file 
      $ chmod o-r file 
+     $ chmod go-rwx file
