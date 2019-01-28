@@ -59,7 +59,7 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 
 `MAC and Linux Users can ignore this installation`
 
-URL : https://www.netsarang.com/download/software.html
+URL : https://www.netsarang.com/en/free-for-home-school/
 
 ![image](/uploads/a5ad3bb40e3e7c99052e27946c645bb2/image.png)
 
