@@ -87,6 +87,13 @@ ii. Change the default properties.
 
 ![image](/uploads/3f03942acb70af0e7a9327d629d8de1f/image.png)
 
+For Mac Users.
+
+Install a tool https://www.royalapplications.com/ts/mac/download
+
+Import devops.pem file 
+
+
 
 ### 3. Download and Install Visual Studio Code.
 
