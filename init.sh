@@ -102,8 +102,8 @@ PACK
 LENV
 
 if [ "$rreq" = "yes" ]; then 
-	Print "NL" "Rebooting Server.. Try to connect back in 15 sec" R
-	reboot
+	Print "NL" "Shutting down Server.. Try to connect back in 15 sec" R
+	sudo init 0
 fi
 
 Print NL "Run of Init Script .. Completed.. System is ready to use" B 
