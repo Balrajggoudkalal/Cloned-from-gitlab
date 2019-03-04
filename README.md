@@ -56,7 +56,7 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 ![image](/uploads/cd693b51cc08df01d79745b1b4ab4607/image.png)
 
 
-## Create the server and access it with XShell.
+## Create the server and access it with GitBash.
 
 ![image](/uploads/0cd988c4a7ee062d21a3d792e72eb856/image.png)
 
@@ -82,6 +82,9 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 
 
 
+# NOTE: Following tools you can follow and install but we will talk about this in later point of time.
+
+---------------------------------
 
 ### 2. Register and Download and Install XSHELL and XFTP.
 
