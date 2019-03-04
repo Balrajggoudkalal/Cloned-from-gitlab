@@ -78,7 +78,7 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 
 ### To access it with GitBash , You can copy the Public IP and run the following command in Xshell.
 
-![image](/uploads/-/system/temp/2e529ad9d3095c12ad1475ed2a17fbaa/image.png)
+![image](/uploads/9a7c3bdf0e718d1eb308e467bc797e6c/image.png)
 
 
 
