@@ -23,6 +23,7 @@ http://aws.amazon.com
 ### 4. Next you will be prompt to provide the credit card details. So proceed by providing the details
     i. Provide credit/debit card details.
     ii. Select PAN number as NO
+    
 
 ![image](/uploads/62357c0caee93712d7974dc0620f6b58/image.png)
 
@@ -53,6 +54,33 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 `$ mv devops devops.pem `
 
 ![image](/uploads/cd693b51cc08df01d79745b1b4ab4607/image.png)
+
+
+## Create the server and access it with XShell.
+
+![image](/uploads/0cd988c4a7ee062d21a3d792e72eb856/image.png)
+
+![image](/uploads/bb56a8a9cf4ebff4b72d36467f023b03/image.png)
+
+![image](/uploads/da8dd190626dedd91be9d131d0b0f854/image.png)
+
+![image](/uploads/836c19ae877176cdd434e61ea28ecd7a/image.png)
+
+![image](/uploads/0039af6cd78bf413e2fe77da727f6df0/image.png)
+
+![image](/uploads/67b3bbb84218c0d67ccd530e5d222be7/image.png)
+
+![image](/uploads/58ed8aab110fa966dd41b15309cc692c/image.png)
+
+![image](/uploads/da2c41b73d676d2e8c267e84d8910d20/image.png)
+
+
+
+### To access it with GitBash , You can copy the Public IP and run the following command in Xshell.
+
+![image](/uploads/-/system/temp/2e529ad9d3095c12ad1475ed2a17fbaa/image.png)
+
+
 
 
 ### 2. Register and Download and Install XSHELL and XFTP.
@@ -113,29 +141,6 @@ Next you need to import key.
 
 ![image](/uploads/9a3c9dee8c890ca341ac15baf77497aa/image.png)
 
-## d. Create the server and access it with XShell.
-
-![image](/uploads/0cd988c4a7ee062d21a3d792e72eb856/image.png)
-
-![image](/uploads/bb56a8a9cf4ebff4b72d36467f023b03/image.png)
-
-![image](/uploads/da8dd190626dedd91be9d131d0b0f854/image.png)
-
-![image](/uploads/836c19ae877176cdd434e61ea28ecd7a/image.png)
-
-![image](/uploads/0039af6cd78bf413e2fe77da727f6df0/image.png)
-
-![image](/uploads/67b3bbb84218c0d67ccd530e5d222be7/image.png)
-
-![image](/uploads/58ed8aab110fa966dd41b15309cc692c/image.png)
-
-![image](/uploads/da2c41b73d676d2e8c267e84d8910d20/image.png)
-
-
-
-### To access it with xshell , You can copy the Public IP and run the following command in Xshell.
-
-![image](/uploads/550e0bc2f38fd3e4f4e8b4c6e5a8da7e/image.png)
 
 
 
