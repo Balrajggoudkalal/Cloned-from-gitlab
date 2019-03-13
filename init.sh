@@ -35,7 +35,9 @@ SELINUX() {
 PACK() {
 
 	Print SL "=>> Installing base Packages.. " B
-	yum install wget zip unzip gzip vim net-tools facter https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y &>/dev/null
+	yum install wget zip unzip gzip vim net-tools https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y &>/dev/null
+	yum update -y 
+	yum clean all
 	Print NL Success G
 }
 
