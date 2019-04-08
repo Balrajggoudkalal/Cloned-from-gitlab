@@ -55,6 +55,8 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 
 ![image](/uploads/cd693b51cc08df01d79745b1b4ab4607/image.png)
 
+## Upload `devops.pub` file into AWS.
+
 
 ## Create the server and access it with GitBash.
 
