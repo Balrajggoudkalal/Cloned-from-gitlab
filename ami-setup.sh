@@ -75,4 +75,4 @@ echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 ## Enable Password Logins
 ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
-sed -i -e '/^PasswordAuthentication/ c '
+sed -i -e '/^PasswordAuthentication/ c PasswordAuthentication ' /etc/ssh/sshd_config
