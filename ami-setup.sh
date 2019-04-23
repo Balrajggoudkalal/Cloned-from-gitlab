@@ -72,3 +72,4 @@ Stat $? "Enable idle shutdown"
 ## MISC
 echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 
+## Enable Password Logins
