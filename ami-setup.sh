@@ -4,7 +4,9 @@
 
 ## Checking Internet 
 ping -c 2 google.com &>/dev/null 
-if [ $? -ne 0 ]
+if [ $? -ne 0 ]; then 
+    echo "Inter"
+fi
 ## Common Functions 
 
 
