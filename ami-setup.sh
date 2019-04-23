@@ -77,3 +77,5 @@ ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 sed -i -e '/^PasswordAuthentication/ c PasswordAuthentication yes' /etc/ssh/sshd_config
 Stat $? "Enable Password Login"
+
+## Setup user passwords
