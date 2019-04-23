@@ -30,7 +30,7 @@ Stat $? "Disabling Firewall"
 
 ## Updating System Updates
 yum update -y &>/dev/null 
-Stat $? ""
+Stat $? "Updating System Updates"
 
 ## Install Base Packages
 PACK_LIST=""
