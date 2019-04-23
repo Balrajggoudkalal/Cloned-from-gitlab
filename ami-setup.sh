@@ -88,3 +88,4 @@ Infot "  root / $ROOT_PASS"
 
 hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
 
+echo -e ""
