@@ -21,3 +21,4 @@ fi
 
 ## Disabling SELINUX
 sed -i -e '/^SELINUX/ c SELINUX=disabled' /etc/selinux/config
+STAT=$?
