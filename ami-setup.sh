@@ -29,7 +29,8 @@ systemctl disable firewalld &>/dev/nulll
 Stat $? "Disabling Firewall"
 
 ## Updating System Updates
-yum update -y &>>
+yum update -y &>/dev/null 
+Stat $? ""
 
 ## Install Base Packages
 PACK_LIST=""
