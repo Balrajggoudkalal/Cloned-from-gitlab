@@ -20,4 +20,4 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 ## Disabling SELINUX
-sed -i -e '/SELINUX/ '
+sed -i -e '/^SELINUX/ c SELINUX='
