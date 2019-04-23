@@ -39,6 +39,6 @@ info "Installing Base Packages"
 for package in $PACK_LIST ; do 
     yum install $package -y &>/dev/null  
     rpm -qa | grep epel &>/dev/null
-    
+    [ $? -eq 0 ] && 
     Statt $? "Installed $package"
 done
