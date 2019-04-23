@@ -16,6 +16,7 @@ source /tmp/common.sh
 ## Check ROOT USER 
 if [ $(id -u) -ne 0 ]; then 
     error "You should be a root/sudo user to perform this script"
+    exit 1
 fi
 
 
