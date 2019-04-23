@@ -3,7 +3,8 @@
 ## Following code can help in setting up AMI in AWS for practice of DevOps Tools 
 
 ## Checking Internet 
-ping -c 2 
+ping -c 2 google.com &>/dev/null 
+
 
 ## Common Functions 
 
