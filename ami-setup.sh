@@ -86,4 +86,4 @@ info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
 Infot "  root / $ROOT_PASS"
 
-hint "System is going to shutdown now.. "
+hint "System is going to shutdown now.. Make a note of the above passwords and "
