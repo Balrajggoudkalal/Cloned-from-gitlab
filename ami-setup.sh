@@ -48,4 +48,4 @@ yum clean all &>/dev/null
 sed -i -e '/TCPKeepAlive/ c TCPKeepAlive yes' -e '/ClientAliveInterval/ c ClientAliveInterval 10' /etc/ssh/sshd_config
 Stat $? "Fixing SSH timeouts"
 
-## Setting up 
+## Setting u
