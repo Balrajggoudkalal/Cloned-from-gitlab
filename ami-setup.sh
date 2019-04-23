@@ -54,4 +54,4 @@ chmod +x /etc/profile.d/ps1.sh
 Stat "Enable Color Prompt"
 
 ## Enable idle shutdown
-curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/
+curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/idle.sh -o 
