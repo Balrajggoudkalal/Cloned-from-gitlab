@@ -4,7 +4,8 @@
 
 ## Check ROOT USER 
 if [ $(id -u) -ne 0 ]; then 
-    Error "You should be a root user to perform this script"
+    Error "You should be a root/sudo user to perform this script"
+fi
 
 
 ## Disabling SELINUX
