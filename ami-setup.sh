@@ -29,3 +29,4 @@ systemctl disable firewalld &>/dev/nulll
 Stat $? "Disabling Firewall"
 
 ## Install Base Packages
+PACK_LIST=""
