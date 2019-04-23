@@ -26,7 +26,7 @@ Stat $? "Disabling SELINUX"
 
 ## Disable firewall 
 systemctl disable firewalld &>/dev/nulll 
-Stat $? "Disabling Firewall"
+Stat 0 "Disabling Firewall"
 
 ## Updating System Updates
 yum update -y &>/dev/null 
