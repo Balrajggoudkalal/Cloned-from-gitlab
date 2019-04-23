@@ -73,4 +73,4 @@ Stat $? "Enable idle shutdown"
 echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 
 ## Enable Password Logins
-ROOT_PASS=$()
+ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
