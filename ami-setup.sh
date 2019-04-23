@@ -25,4 +25,6 @@ Stat $? "Disabling SELINUX"
 
 
 ## Disable firewall 
-systemctl disable firewalld 
+systemctl disable firewalld &>/dev/nulll 
+Stat $? "Disabling Firewall"
+
