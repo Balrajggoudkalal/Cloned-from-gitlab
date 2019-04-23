@@ -82,4 +82,5 @@ CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 echo $ROOT_PASS | passwd --stdin &>/dev/null 
 echo $CENTOS_PASS | passwd --stdin centos &>/dev/null 
 Stat $? "Setup Password for Users"
-info "\t"
+info "\t Following are the Usernames and Passwords"
+Info 
