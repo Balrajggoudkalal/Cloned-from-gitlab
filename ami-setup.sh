@@ -5,7 +5,7 @@
 ## Checking Internet 
 ping -c 2 google.com &>/dev/null 
 if [ $? -ne 0 ]; then 
-    echo "Inter"
+    echo "Internet connection is now "
 fi
 ## Common Functions 
 
