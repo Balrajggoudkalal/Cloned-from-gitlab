@@ -79,4 +79,4 @@ Stat $? "Enable Password Login"
 ## Setup user passwords
 ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
-echo 
+echo $ROOT_PASS | passwd --stdin &>/dev/null 
