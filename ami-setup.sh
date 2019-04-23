@@ -54,3 +54,4 @@ chmod +x /etc/profile.d/ps1.sh
 Stat "Enable Color Prompt"
 
 ## Enable idle shutdown
+curl -s 
