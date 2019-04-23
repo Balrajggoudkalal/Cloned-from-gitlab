@@ -44,4 +44,4 @@ for package in $PACK_LIST ; do
 done
 yum clean all &>/dev/null 
 
-## Setting SSH Connection
+## Fixing SSH timeouts
