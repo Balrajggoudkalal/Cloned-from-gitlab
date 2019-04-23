@@ -37,5 +37,5 @@ PACK_LIST="wget zip unzip gzip vim net-tools https://dl.fedoraproject.org/pub/ep
 info "Installing Base Packages"
 for package in $PACK_LIST ; do 
     yum install $package -y &>/dev/null  
-    Stat $? "Installed "
+    Stat $? "\tInstalled $package"
 done
