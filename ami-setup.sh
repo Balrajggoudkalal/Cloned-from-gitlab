@@ -43,3 +43,4 @@ for package in $PACK_LIST ; do
     Statt $? "Installed $package"
 done
 yum clean all &>/dev/null 
+
