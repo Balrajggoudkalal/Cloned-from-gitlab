@@ -28,3 +28,4 @@ Stat $? "Disabling SELINUX"
 systemctl disable firewalld &>/dev/nulll 
 Stat $? "Disabling Firewall"
 
+## Install Base Packages
