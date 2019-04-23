@@ -62,4 +62,5 @@ sed -i -e '/idle/ d' /var/spool/cron/root &>/dev/null
 echo "*/10 * * * * sh -x /boot/idle.sh &>/tmp/idle.out" >/var/spool/cron/root
 chmod 600 /var/spool/cron/root
 STAT2=$?
-if [ $STAT1 -eq 0 -a $STAT2 -eq 0 ]
+if [ $STAT1 -eq 0 -a $STAT2 -eq 0 ]; then 
+    STAT
