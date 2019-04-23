@@ -84,4 +84,4 @@ echo $CENTOS_PASS | passwd --stdin centos &>/dev/null
 Stat $? "Setup Password for Users"
 info "\t Following are the Usernames and Passwords"
 Infot " centos / $CENTOS_PASS"
-Infot " root   / $ROOT"
+Infot " root   / $ROOT_PASS"
