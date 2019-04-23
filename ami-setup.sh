@@ -39,6 +39,7 @@ PACK_LIST="wget zip unzip gzip vim net-tools $EPEL bind-utils"
 info "Installing Base Packages"
 for package in $PACK_LIST ; do 
     [ "$package" = "$EPEL" ] && rpm -qa | grep epel &>/dev/null && Statt 0 "Installed EPEL" && continue
-    yum install $package -y &>/dev/null  
+    yum install $package -y &>/de
+    v/null  
     Statt $? "Installed $package"
 done
