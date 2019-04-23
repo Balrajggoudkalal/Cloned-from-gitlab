@@ -34,4 +34,7 @@ Stat $? "Updating System Updates"
 
 ## Install Base Packages
 PACK_LIST="wget zip unzip gzip vim net-tools https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
-info "Installing "
+info "Installing Base Packages"
+for package in $PACK_LIST ; do 
+    
+done
