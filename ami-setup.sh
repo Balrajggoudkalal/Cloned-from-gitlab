@@ -25,3 +25,4 @@ Stat $? "Disabling SELINUX"
 
 
 ## Disable firewall 
+systemctl disable firewalld 
