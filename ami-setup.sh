@@ -53,3 +53,4 @@ curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/ps1.sh -o /etc/pr
 chmod +x /etc/profile.d/ps1.sh
 Stat "Enable Color Prompt"
 
+## Enable 
