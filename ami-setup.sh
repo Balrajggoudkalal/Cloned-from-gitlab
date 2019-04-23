@@ -33,4 +33,4 @@ yum update -y &>/dev/null
 Stat $? "Updating System Updates"
 
 ## Install Base Packages
-PACK_LIST=""
+PACK_LIST="wget zip unzip gzip vim net-tools https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
