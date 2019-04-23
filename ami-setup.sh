@@ -23,3 +23,5 @@ fi
 sed -i -e '/^SELINUX/ c SELINUX=disabled' /etc/selinux/config
 Stat $? "Disabling SELINUX"
 
+
+## Disable firewall 
