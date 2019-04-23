@@ -55,4 +55,5 @@ Stat "Enable Color Prompt"
 
 ## Enable idle shutdown
 curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/idle.sh -o /boot/idle.sh 
-	chmod +x /boot/idle.sh
+chmod +x /boot/idle.sh
+
