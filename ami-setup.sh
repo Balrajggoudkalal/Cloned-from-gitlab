@@ -85,3 +85,4 @@ Stat $? "Setup Password for Users"
 info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
 Infot "  root / $ROOT_PASS"
+
