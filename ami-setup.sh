@@ -68,3 +68,4 @@ else
     STAT=1
 fi 
 Stat $? "Enable idle shutdown"
+
