@@ -11,6 +11,7 @@ fi
 ## Common Functions 
 curl -s https://raw.githubusercontent.com/linuxautomations/scripts/master/common-functions.sh -o /tmp/common.sh &>/dev/null 
 source /tmp/common.sh
+EPEL=
 
 
 ## Check ROOT USER 
