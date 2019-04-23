@@ -42,3 +42,4 @@ for package in $PACK_LIST ; do
     yum install $package -y &>/dev/null  
     Statt $? "Installed $package"
 done
+yum clean all &>/dev/null 
