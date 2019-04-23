@@ -51,7 +51,7 @@ Stat $? "Fixing SSH timeouts"
 ## Enable color prompt
 curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/ps1.sh -o /etc/profile.d/ps1.sh
 chmod +x /etc/profile.d/ps1.sh
-Stat "Enable Color Prompt"
+Stat $? "Enable Color Prompt"
 
 ## Enable idle shutdown
 curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/idle.sh -o /boot/idle.sh 
