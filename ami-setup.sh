@@ -67,4 +67,4 @@ if [ $STAT1 -eq 0 -a $STAT2 -eq 0 ]; then
 else
     STAT=1
 fi 
-Stat $? ""
+Stat $? "Enable idle shutdown"
