@@ -73,3 +73,4 @@ Stat $? "Enable idle shutdown"
 echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 
 ## Enable Password Logins
+ROOT_PASS=$()
