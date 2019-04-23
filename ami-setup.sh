@@ -4,8 +4,7 @@
 
 ## Checking Internet 
 ping -c 2 google.com &>/dev/null 
-
-
+if [ $? -ne 0 ]
 ## Common Functions 
 
 
