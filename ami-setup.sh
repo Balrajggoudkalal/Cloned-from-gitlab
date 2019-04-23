@@ -49,3 +49,4 @@ sed -i -e '/TCPKeepAlive/ c TCPKeepAlive yes' -e '/ClientAliveInterval/ c Client
 Stat $? "Fixing SSH timeouts"
 
 ## Enable color prompt
+curl -s https://gitlab.com/cit-devops/intros/raw/master/scipts/ps1.sh -o 
