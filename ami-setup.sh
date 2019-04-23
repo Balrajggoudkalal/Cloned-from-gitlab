@@ -9,7 +9,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 ## Common Functions 
-curl -s https://raw.githubusercontent.com/linuxautomations/scripts/master/common-functions.sh -o /tmp
+curl -s https://raw.githubusercontent.com/linuxautomations/scripts/master/common-functions.sh -o /tmp/common.sh 
+
 
 ## Check ROOT USER 
 if [ $(id -u) -ne 0 ]; then 
