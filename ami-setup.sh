@@ -29,7 +29,7 @@ systemctl disable firewalld &>/dev/nulll
 Stat 0 "Disabling Firewall"
 
 ## Updating System Updates
-info ""
+info "Updating System Updates"
 yum update -y &>/dev/null 
 Stat $? "Updating System Updates"
 
