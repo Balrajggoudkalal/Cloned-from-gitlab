@@ -85,8 +85,8 @@ Stat $? "Setup Password for Users"
 info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
 Infot "  root / $ROOT_PASS"
-
+echo
 hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
-
+echo
 echo -e "★★★ Shutting Down the Server ★★★"
 sudo init 0 &>/dev/null 
