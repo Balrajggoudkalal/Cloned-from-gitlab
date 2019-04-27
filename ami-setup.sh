@@ -79,6 +79,7 @@ Stat $? "Enable Password Login"
 ## Setup user passwords
 ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
 CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
+useradd -g google-sudoers centos &>/dev/null
 echo $ROOT_PASS | passwd --stdin &>/dev/null 
 echo $CENTOS_PASS | passwd --stdin centos &>/dev/null 
 Stat $? "Setup Password for Users"
