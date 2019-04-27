@@ -73,7 +73,7 @@ Stat $? "Enable idle shutdown"
 echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 
 ## Enable Password Logins
-sed -i -e '/^PasswordAuthentication/ c PasswordAuthentication yes' /etc/ssh/sshd_config
+sed -i -e '/^PasswordAuthentication/ c PasswordAuthentication yes' -e '/^PermitRootLogin/ c PermitRootLogin yes' /etc/ssh/sshd_config
 Stat $? "Enable Password Login"
 
 ## Setup user passwords
