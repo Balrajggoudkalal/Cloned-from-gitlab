@@ -74,12 +74,13 @@ echo -e "LANG=en_US.utf-8\nLC_ALL=en_US.utf-8" >/etc/environment
 
 ## Enable Password Logins
 sed -i -e '/^PasswordAuthentication/ c PasswordAuthentication yes' -e '/^PermitRootLogin/ c PermitRootLogin yes' /etc/ssh/sshd_config
+chattr +i /etc/ssh/sshd_config
 Stat $? "Enable Password Login"
 
 ## Setup user passwords
-ROOT_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
-CENTOS_PASS=$(head /dev/urandom | tr -dc A-Za-z | head -c 8 ; echo '')
-useradd -g google-sudoers centos &>/dev/null
+ROOT_PASS="DevOps321"
+CENTOS_PASS="DevOps321"
+usermod -a -G google-sudoers centos &>/dev/null
 echo $ROOT_PASS | passwd --stdin &>/dev/null 
 echo $CENTOS_PASS | passwd --stdin centos &>/dev/null 
 Stat $? "Setup Password for Users"
@@ -87,8 +88,8 @@ info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
 Infot "  root / $ROOT_PASS"
 echo
-hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
-echo
-echo -e "★★★ Shutting Down the Server ★★★"
-echo;echo
-sudo init 0 &>/dev/null 
+#hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
+#echo
+#echo -e "★★★ Shutting Down the Server ★★★"
+#echo;echo
+#sudo init 0 &>/dev/null 
