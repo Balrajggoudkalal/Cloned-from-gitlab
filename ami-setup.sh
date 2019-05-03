@@ -31,7 +31,7 @@ Stat 0 "Disabling Firewall"
 
 ## Updating System Updates
 info "Updating System Updates"
-yum update -y &>/dev/null 
+yum update -y #&>/dev/null 
 Stat $? "Updating System Updates"
 
 ## Install Base Packages
