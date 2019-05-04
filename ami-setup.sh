@@ -80,7 +80,7 @@ Stat $? "Enable Password Login"
 ## Setup user passwords
 ROOT_PASS="DevOps321"
 CENTOS_PASS="DevOps321"
-usermod -a -G google-sudoers centos &>/dev/null
+#usermod -a -G google-sudoers centos &>/dev/null
 echo $ROOT_PASS | passwd --stdin root &>/dev/null 
 echo $CENTOS_PASS | passwd --stdin centos &>/dev/null 
 Stat $? "Setup Password for Users"
