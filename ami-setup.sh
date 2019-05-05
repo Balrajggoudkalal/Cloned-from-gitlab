@@ -81,7 +81,7 @@ Stat $? "Enable Password Login"
 ROOT_PASS="DevOps321"
 CENTOS_PASS="DevOps321"
 #usermod -a -G google-sudoers centos &>/dev/null
-echo $ROOT_PASS | passwd --stdin root   &>/dev/null
+echo $ROOT_PASS | passwd --stdin root   >>
 echo $CENTOS_PASS | passwd --stdin centos   &>/dev/null
 Stat $? "Setup Password for Users"
 info "   Following are the Usernames and Passwords"
@@ -92,6 +92,7 @@ echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIfSCB5MtXe54V3lWGBGSxMWPue5CjmSA4ky
 sed -i -e 's/showfailed//' /etc/pam.d/postlogin
 chmod +x /etc/rc.d/rc.local 
 systemctl enable rc-local
+
 #hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
 #echo
 #echo -e "★★★ Shutting Down the Server ★★★"
