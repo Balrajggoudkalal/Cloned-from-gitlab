@@ -82,7 +82,7 @@ ROOT_PASS="DevOps321"
 CENTOS_PASS="DevOps321"
 #usermod -a -G google-sudoers centos &>/dev/null
 echo "echo $ROOT_PASS | passwd --stdin root"   >>/etc/rc.d/rc.local 
-echo $CENTOS_PASS | passwd --stdin centos   &>/dev/null >>/etc/rc.d/rc.local 
+echo "echo $CENTOS_PASS | passwd --stdin centos"   >>/etc/rc.d/rc.local 
 Stat $? "Setup Password for Users"
 info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
