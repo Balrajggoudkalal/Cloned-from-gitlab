@@ -85,8 +85,6 @@ echo "echo $ROOT_PASS | passwd --stdin root"   >>/etc/rc.d/rc.local
 echo "echo $CENTOS_PASS | passwd --stdin centos"   >>/etc/rc.d/rc.local 
 cho $CENTOS_PASS | passwd --stdin centos
 echo "sed -i -e 's/^centos:!!/centos:/' /etc/shadow" >>/etc/rc.d/rc.local
-sed -i -e 's/^centos:!!/centos:/' /etc/shadow
-cha
 Stat $? "Setup Password for Users"
 info "   Following are the Usernames and Passwords"
 Infot "centos / $CENTOS_PASS"
