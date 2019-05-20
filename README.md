@@ -47,7 +47,7 @@ Choose a service called as `EC2` and create a Server as shown.
 
 ![image](/uploads/720aa0db98061d10d69ee5d72adefa7d/image.png)
 
-
+![image](/uploads/96da52f3964dfd8b4490203dc8ca8ebc/image.png)
 
 Owner: 973714476881
 
