@@ -34,3 +34,19 @@ http://aws.amazon.com
 http://console.aws.amazon.com
 
 ![image](/uploads/2569bb7a610e1fd49afd54b37de5f74d/image.png)
+
+
+## b. Create a server in AWS.
+
+Choose a region of your choice. (N.Virginia, Ohio, or Oregon)
+
+Choose a service called as `EC2` and create a Server as shown.
+
+
+![image](/uploads/5ce968e9c22a29685b018392b5c85734/image.png)
+
+
+
+![image](/uploads/9e8a05ecccda61a1fa4ca87b313058ee/image.png)
+
+
