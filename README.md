@@ -45,6 +45,10 @@ Choose a service called as `EC2` and create a Server as shown.
 
 ![image](/uploads/5ce968e9c22a29685b018392b5c85734/image.png)
 
+![image](/uploads/720aa0db98061d10d69ee5d72adefa7d/image.png)
+
 
 
 Owner: 973714476881
+
+Username / Password : root / DevOps321
