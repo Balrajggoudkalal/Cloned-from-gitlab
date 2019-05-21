@@ -49,6 +49,38 @@ Choose a service called as `EC2` and create a Server as shown.
 
 ![image](/uploads/96da52f3964dfd8b4490203dc8ca8ebc/image.png)
 
+![image](/uploads/57e780c32ccfe6a2f82be0e7fc5c9153/image.png)
+
 Owner: 973714476881
+
+Then select the AMI and click on "Launch"
+
+![image](/uploads/787b1d027563c36c6d410992c133ef16/image.png)
+
+Select "t2.micro" and proceed.
+
+
+![image](/uploads/2d0eba6bc61849ef571e3a80605b0987/image.png)
+
+No changes required, Just Click on "Add Storage"
+
+![image](/uploads/f9a5253ad363d875f3612c163b8cbb32/image.png)
+
+No changes required , Click on "Add Tags"
+
+![image](/uploads/8143f36d2bd5bd44798d80cfa102a0d7/image.png)
+
+Click on "Next: Configure Security Group"
+
+
+![image](/uploads/98e7dc4dfd194332f2ece954c263d27f/image.png)
+
+
+Finally Click on "Review and Launch" and "Launch"
+
+![image](/uploads/7c2fd2045593377289fbdc7156a0a8a8/image.png)
+
+Select "Proceed with out KeyPair"
+
 
 Username / Password : root / DevOps321
