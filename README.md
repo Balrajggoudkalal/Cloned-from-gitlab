@@ -82,5 +82,6 @@ Finally Click on "Review and Launch" and "Launch"
 
 Select "Proceed with out KeyPair"
 
+Then use the Public IP of the server and connect it with Putty , Using the following credentials.
 
 Username / Password : root / DevOps321
