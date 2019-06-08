@@ -85,3 +85,25 @@ Select "Proceed with out KeyPair"
 Then use the Public IP of the server and connect it with Putty , Using the following credentials.
 
 Username / Password : root / DevOps321
+
+
+### 
+
+### Install GitBash
+
+`MAC and Linux Users can ignore this installation`
+
+Download the GitBash from https://git-scm.com/downloads and install it with default options
+
+Then,
+
+Open the GitBash and run the following commands. But Mac and Linux Users can use `Terminal` to run these commands.
+
+`$ ssh-keygen -f devops `   <- You will be asked to enter Passphrase prompt , But just hit ENTER.
+
+`$ mv devops devops.pem `
+
+![image](/uploads/cd693b51cc08df01d79745b1b4ab4607/image.png)
+
+## Upload `devops.pub` file into AWS.
+
