@@ -5,6 +5,7 @@ yes y |ssh-keygen -q -t rsa -N ''
 
 ### Find latest AMI of CentOS 7
 
+```terraform
 data "aws_ami" "centos" {
 owners      = ["679593333241"]
 most_recent = true
@@ -24,3 +25,4 @@ most_recent = true
       values = ["ebs"]
   }
 }
+```
