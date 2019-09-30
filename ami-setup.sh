@@ -35,7 +35,7 @@ yum update -y #&>/dev/null
 Stat $? "Updating System Updates"
 
 ## Install Base Packages
-PACK_LIST="wget zip unzip gzip vim net-tools git $EPEL bind-utils"
+PACK_LIST="wget zip unzip gzip vim net-tools git $EPEL bind-utils python2-pip"
 info "Installing Base Packages"
 for package in $PACK_LIST ; do 
     [ "$package" = "$EPEL" ] && rpm -qa | grep epel &>/dev/null && Statt 0 "Installed EPEL" && continue
@@ -93,6 +93,7 @@ echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIfSCB5MtXe54V3lWGBGSxMWPue5CjmSA4ky
 sed -i -e 's/showfailed//' /etc/pam.d/postlogin
 chmod +x /etc/rc.d/rc.local 
 systemctl enable rc-local
+pip install awscli
 rm -rf /var/lib/yum/* 
 
 #hint "System is going to shutdown now.. Make a note of the above passwords and save them to use with all your servers .."
