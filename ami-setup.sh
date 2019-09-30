@@ -35,7 +35,7 @@ yum update -y #&>/dev/null
 Stat $? "Updating System Updates"
 
 ## Install Base Packages
-PACK_LIST="wget zip unzip gzip vim net-tools git $EPEL bind-utils python2-pip"
+PACK_LIST="wget zip unzip gzip vim net-tools git $EPEL bind-utils python2-pip jq"
 info "Installing Base Packages"
 for package in $PACK_LIST ; do 
     [ "$package" = "$EPEL" ] && rpm -qa | grep epel &>/dev/null && Statt 0 "Installed EPEL" && continue
