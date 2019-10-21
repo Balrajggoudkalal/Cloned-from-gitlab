@@ -93,6 +93,9 @@ Username / Password : root / DevOps321
 
 https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
+For Mac Users, Use terminal
+
+`ssh root@<Public-IP>`
 
 ### Install GitBash
 
