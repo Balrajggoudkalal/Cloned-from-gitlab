@@ -89,6 +89,11 @@ Username / Password : root / DevOps321
 
 ### 
 
+### Download and Install putty
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+
 ### Install GitBash
 
 `MAC and Linux Users can ignore this installation`
