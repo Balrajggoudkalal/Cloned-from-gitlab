@@ -51,7 +51,11 @@ Choose a service called as `EC2` and create a Server as shown.
 
 ![image](/uploads/57e780c32ccfe6a2f82be0e7fc5c9153/image.png)
 
-Owner: 973714476881   (OR) Click this URL : https://console.aws.amazon.com/ec2/home?region=us-east-1#Images:visibility=public-images;ownerAlias=973714476881;sort=name
+Owner: 973714476881   (OR) Click following URL 
+
+N.Virginia Region: https://console.aws.amazon.com/ec2/home?region=us-east-1#Images:visibility=public-images;ownerAlias=973714476881;sort=name
+
+Oregon Region : https://console.aws.amazon.com/ec2/home?region=us-west-2#Images:visibility=public-images;ownerAlias=973714476881;sort=name
 
 Then select the AMI and click on "Launch"
 
