@@ -119,3 +119,5 @@ Open the GitBash and run the following commands. But Mac and Linux Users can use
 
 ## Upload `devops.pub` file into AWS.
 
+
+Lab Practice Katacoda Link: https://www.katacoda.com/rkalluru
